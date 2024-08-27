@@ -1,0 +1,66 @@
+.container {
+    padding: 20px 0px;
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+    /* background-color: lightgray; */
+}
+
+.flex {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex .logo {
+    width: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    font-family: "outfit";
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.container button {
+    background-color: transparent;
+    border: 1px solid tomato;
+    font-size: 16px;
+    color: #49557e;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.container button :hover {
+    background-color: white;
+    transition: 0.2s;
+}
+
+.active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid tomato;
+}
+.nav-search{
+    position: relative;
+}
+.nav .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 5px;
+    top: -8px;
+    background-color: tomato;
+}
