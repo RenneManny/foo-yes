@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import "./Food.css";
 import { StoreContext } from "../../Context/StoreContext";
 import Foodtem from "../Food-item/Foodtem";
-function Food() {
+function Food({cat}) {
+  
   const { food_list } = useContext(StoreContext);
 
   return (
@@ -11,15 +12,18 @@ function Food() {
       {/* Render food_list or any other UI components */}
       <div className="foo-list">
         {food_list.map((item,index) => {
-          return;
-
-          <Foodtem
+          
+return (  <Foodtem
            
-            id={item._id}
-            price={item.price}
-            decription={item.decription}
-            image={item.image}
-          />;
+  key={item.id}
+    price={item.price}
+    description={item.description}
+    image={item.image}
+    name={item.name}
+  />)
+  
+
+        
         })}
       </div>
     </div>
