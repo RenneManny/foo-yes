@@ -6,32 +6,65 @@
     transition: 0.3s;
     animation: fadeIn 2s;
 }
-.food-img{
+
+.food-img {
     max-width: 100%;
     border-radius: 15px 15px 0px 0px;
 }
-.food-info{
-    padding: 20px ;
+
+.food-info {
+    padding: 20px;
 }
-.name-rating{
- display: flex;
- gap: 50px;
- align-items: center;
- margin-bottom: 10px;
+
+.name-rating {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 10px;
 }
-.name-rating p{
+
+.name-rating p {
     font-size: 20px;
     font-weight: 500;
     font-family: "outfit";
 }
-.food-img:hover{
+
+.food-img:hover {
     transform: translate(10px ease);
 }
-.description{
+
+.description {
     color: grey;
 }
-.price{
+
+.price {
     color: red;
     font-weight: bolder;
     font-family: "outfit";
+}
+
+.add {
+    cursor: pointer;
+}
+
+.food-container {
+    position: relative;
+}
+
+.add {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    border-radius: 15%;
+}
+
+.foodCounter {
+
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-around; */
+    padding: 6px;
+    border-radius: 10px;
+    align-items: center;
+
 }
