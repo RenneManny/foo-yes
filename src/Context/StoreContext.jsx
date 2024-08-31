@@ -9,6 +9,7 @@ const StoreContextProvider = ({ children }) => {
   const addToCart = (itemId) => {
     setCartItems((prevCart) => {
       const currentCount = prevCart[itemId] || 0;
+
       return { ...prevCart, [itemId]: currentCount + 1 };
     });
   };
@@ -24,11 +25,18 @@ const StoreContextProvider = ({ children }) => {
       }
     });
   };
+
   useEffect(() => {
-    console.log(cartItems);
+    console.log("Current cart items:", cartItems);
   }, [cartItems]);
 
-  const contextValue = { food_list, cartItems, addToCart, removeFromCart };
+  const contextValue = {
+    food_list,
+    cartItems,
+    addToCart,
+    removeFromCart,
+    setCartItems,
+  };
 
   return (
     <StoreContext.Provider value={contextValue}>

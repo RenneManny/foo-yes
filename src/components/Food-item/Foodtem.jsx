@@ -8,7 +8,9 @@ function Foodtem({ id, name, price, description, image }) {
 
   // Get the current count of the item from the cart
   const itemCount = cartItems[id] || 0;
-
+  console.log(`Rendering Foodtem for item ID: ${id}`);
+  console.log(`Rendering Foodtem for item name: ${name}`);
+  console.log("Item Count:", itemCount);
   return (
     <div className="food-item">
       <div className="food-container">
@@ -28,7 +30,7 @@ function Foodtem({ id, name, price, description, image }) {
               src={assets.add_icon_green}
               alt="Increase Quantity"
             />
-            <p>{itemCount}</p>
+            <p>{cartItems[id]}</p>
             <img
               className="decrease"
               onClick={() => removeFromCart(id)}
@@ -44,6 +46,7 @@ function Foodtem({ id, name, price, description, image }) {
           {/* Assuming you have a rating image, otherwise remove this line */}
           <img src={assets.rating_starts} alt="Rating Stars" />
         </div>
+        <p>id:{id}</p>
         <p className="description">{description}</p>
         <p className="price">${price}</p>
       </div>
