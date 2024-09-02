@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    background-color: #323232;
+    gap: 20px;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.width {
+    width: 50%;
+}
+
+.footer-content {
+    padding: 20px 0px;
+    margin: 20px auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "outfit";
+}
+.footer-content p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.footer-content ul{
+    list-style-type: none;
+}
+.footer-content .center li{
+cursor: pointer;
+line-height: 28px;
+}
+.icns{
+ display: flex;
+ gap: 10px;
+ cursor: pointer;
+    padding-top: 50px;
+}
+.footer-content .right{
+    line-height: 28px;
+}
+.footer hr{
+    width: 100%;
+    height: 2px;
+    margin: 20px auto;
+    /* color: white; */
+    background-color: grey;
+    border: none;
+}
+.footer p{
+    font-family: outfit;
+    font-size: 18px;
+}
