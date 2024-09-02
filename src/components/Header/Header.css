@@ -42,8 +42,40 @@
 .header-contents button:hover{
     background-color: white;
     color: #747474;
-    border: 2px solid #E35D1D;
+  
     transition: 0.2ms;
     cursor: pointer;
     display: inline-block;
+}
+@media screen and (max-width:1050px) {
+    
+    .header-contents{
+        max-width: 45%;
+    }
+    
+}
+@media screen and (max-width:1050px) {
+    
+    .header{
+        background-size: 100%;
+    }
+    
+}
+@media screen and (max-width:750px) {
+   
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+    .header{
+        background-size: 100% ;
+    }
+    .header-contents{
+        padding: 0px 20px ;
+    }
 }

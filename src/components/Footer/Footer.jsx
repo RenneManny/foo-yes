@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 function Footer() {
   return (
     <>
-      <div className="footer">
+      <div className="footer" id="footer">
         <div className="footer-content">
           <div className="content-left width">
             <img src={assets.logo} alt="" />
@@ -38,7 +38,7 @@ function Footer() {
           </div>
         </div>
         <hr />
-        <p>&copy; 2024 copyright reserved - fooYes </p>
+        <p className="copy">&copy; 2024 copyright reserved - fooYes </p>
       </div>
     </>
   );

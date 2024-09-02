@@ -52,15 +52,85 @@
 .active {
     padding-bottom: 2px;
     border-bottom: 2px solid tomato;
+    transform: rotate(360deg);
 }
-.nav-search{
+/* .menu-list .active:hover{
+    
+} */
+.nav-search {
     position: relative;
 }
-.nav .dot{
+.navbar a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.nav .dot {
     position: absolute;
     min-width: 10px;
     min-height: 10px;
     border-radius: 5px;
     top: -8px;
     background-color: tomato;
+}
+
+@media screen and (max-width:1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .nav-right {
+        gap: 30px;
+
+    }
+
+    .nav-right img {
+        width: 22px;
+    }
+
+    .navbar button {
+        padding: 8px 25px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .nav-right {
+        gap: 20px;
+
+    }
+
+    .nav-right img {
+        width: 20px;
+    }
+
+    .navbar button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+    .container {
+        padding: 20px 20px;
+        
+       
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
 }

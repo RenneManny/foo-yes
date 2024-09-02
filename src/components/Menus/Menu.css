@@ -65,3 +65,13 @@ hr{
     transform: rotate(180deg);
  }
  
+@media screen and (max-width:1050px){
+    .menu-txt{
+        max-width: 100%;
+        font-size: 14px;
+        overflow-x:scroll ;
+    }
+   .explore-menu{
+    padding: 20px 20px;
+   }
+}

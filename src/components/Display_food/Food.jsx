@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Food.css";
 import { StoreContext } from "../../Context/StoreContext";
 import Foodtem from "../Food-item/Foodtem";
+
 function Food({ cat }) {
   console.log(`The categoty is :${cat}`)
   const { food_list } = useContext(StoreContext);

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link, NavLink } from "react-router-dom";
 
 import { assets } from "../../assets/assets.js";
 function Navbar() {
@@ -8,33 +9,33 @@ function Navbar() {
   return (
     <>
       <div className="container">
-        <div className="flex">
+        <div className="flex navbar">
           <img src={assets.logo} alt="" className="logo" />
           <ul className="navbar-menu">
-            <li
+            <Link to="/"
               onClick={() => setMenu("Home")}
               className={menu === "Home" ? "active" : ""}
             >
               Home
-            </li>
-            <li
+            </Link>
+            <a href="#explore-menu"
               onClick={() => setMenu("Menu")}
               className={menu === "Menu" ? "active" : ""}
             >
               Menu
-            </li>
-            <li
+            </a>
+            <a href="#app-download"
               onClick={() => setMenu("Mobile-App")}
               className={menu === "Mobile-App" ? "active" : ""}
             >
               Mobile App
-            </li>
-            <li
+            </a>
+            <a href="#footer"
               onClick={() => setMenu("Contact-Us")}
               className={menu === "Contact-Us" ? "active" : ""}
             >
               Contact Us
-            </li>
+            </a>
           </ul>
           <div className="nav-right">
             <img src={assets.search_icon} alt="" />

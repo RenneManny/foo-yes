@@ -30,7 +30,8 @@
 }
 
 .food-img:hover {
-    transform: translate(10px ease);
+    transform: scale(1.05);
+    transition: ease-in-out;
 }
 
 .description {
