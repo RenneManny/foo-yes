@@ -32,8 +32,10 @@ function Footer() {
           <div className="right">
             <h2>Get in Touch</h2>
             <ul>
-              <li>8627963791</li>
+              <li>
+                +91 8627963791</li>
               <li>akhilkum249@gmail.com</li>
+              <li>BHARAT, Himachal Pradesh</li>
             </ul>
           </div>
         </div>
