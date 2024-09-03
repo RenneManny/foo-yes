@@ -8,11 +8,11 @@ function Footer() {
         <div className="footer-content">
           <div className="content-left width">
             <img src={assets.logo} alt="" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              eligendi quis deleniti, ab vel dolores odio quos voluptate maiores
-              laborum facere quam illum blanditiis quidem dicta sapiente ratione
-              ad laboriosam, dignissimos, numquam voluptas. Error?
+            <p >
+              Indulge in a culinary journey at fooYes! Serving up fresh,
+              delicious dishes with a touch of elegance. Join us for a memorable
+              dining experience. For reservations and inquiries, contact us or
+              visit our website. We look forward to welcoming you!
             </p>
             <div className="icns">
               <img src={assets.facebook_icon} alt="" />
@@ -32,8 +32,7 @@ function Footer() {
           <div className="right">
             <h2>Get in Touch</h2>
             <ul>
-              <li>
-                +91 8627963791</li>
+              <li>+91 8627963791</li>
               <li>akhilkum249@gmail.com</li>
               <li>BHARAT, Himachal Pradesh</li>
             </ul>
