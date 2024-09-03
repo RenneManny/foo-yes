@@ -7,10 +7,10 @@ import Order from "./Pages/Orders/Order";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
 const App = () => {
-  const[login,setLogin]=useState(false)
+  const [login, setLogin] = useState(false);
   return (
     <>
-    {login?<Login showLogin={setLogin}/>:<></>}
+      {login ? <Login showLogin={setLogin} /> : <></>}
       <div className="app">
         <Navbar setLogin={setLogin} />
         <Routes>
