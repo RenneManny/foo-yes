@@ -10,7 +10,9 @@ function Navbar({setLogin}) {
     <>
       <div className="container">
         <div className="flex navbar">
-          <img src={assets.logo} alt="" className="logo" />
+          <Link to={"/"}><img src={assets.logo} alt="" className="logo" />
+          </Link>
+          
           <ul className="navbar-menu">
             <Link to="/"
               onClick={() => setMenu("Home")}
@@ -40,7 +42,7 @@ function Navbar({setLogin}) {
           <div className="nav-right">
             <img src={assets.search_icon} alt="" />
             <div className="nav-search">
-              <img src={assets.basket_icon} alt="" />
+             <Link to={"/cart"}><img src={assets.basket_icon} alt="" /></Link> 
               <div className="dot"></div>
             </div>
             <button onClick={()=>setLogin(true)}>SIGN-IN</button>
